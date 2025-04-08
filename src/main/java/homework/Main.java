@@ -1,9 +1,29 @@
+package homework;
+
+import homework.entity.Book;
+import homework.entity.Student;
+import homework.utility.CustomHashMap;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
+        CustomHashMap<String, Integer> map = new CustomHashMap<>();
+
+        map.put("apple", 10);
+        map.put("pear", 15);
+        map.put("banana", 30);
+        map.put("cherry", 7);
+
+        System.out.println(map.get("banana"));
+        System.out.println(map.size());
+        System.out.println(map.remove("pear"));
+        System.out.println(map.size());
+        map.clear();
+        System.out.println(map.size());
+        System.out.println(map);
 
         List<Book> listOfBooks1 = List.of(new Book("Effective Java", "J. Bloch", 2001),
                 new Book("Head First Java", "K. Sierra", 2012));
