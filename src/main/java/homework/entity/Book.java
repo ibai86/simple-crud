@@ -1,3 +1,5 @@
+package homework.entity;
+
 public class Book {
 
     private String name;

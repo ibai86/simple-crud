@@ -1,3 +1,5 @@
+package homework.entity;
+
 import java.util.List;
 
 public class Student {

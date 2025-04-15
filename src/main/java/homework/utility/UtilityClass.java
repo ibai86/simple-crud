@@ -1,6 +1,7 @@
+package homework.utility;
+
 import java.lang.reflect.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public final class UtilityClass {
 
