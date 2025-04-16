@@ -29,13 +29,13 @@ public class User {
     private String email;
 
     @Column(name = "age", nullable = false)
-    private int age;
+    private Integer age;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    public User(String username, String email, int age) {
+    public User(String username, String email, Integer age) {
         this.username = username;
         this.email = email;
         this.age = age;
