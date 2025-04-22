@@ -21,4 +21,11 @@ public class HibernateUtil {
             throw new ExceptionInInitializerError(ex);
         }
     }
+
+    public static void shutdown() {
+        if (sessionFactory != null && !sessionFactory.isClosed()) {
+            getSessionFactory().close();
+            log.info("SessionFactory successfully closed");
+        }
+    }
 }
