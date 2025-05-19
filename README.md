@@ -1,2 +1,1 @@
-# This is Aston Java Intensive 108 stream
-# Task's solutions
+# Basic CRUD service
